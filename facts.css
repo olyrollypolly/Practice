@@ -1,0 +1,154 @@
+.burger {
+	display: inline-block;
+  border: 0;
+	background: none;
+	outline: 0;
+	padding: 0;
+	cursor: pointer;
+	border-bottom: 4px solid black;
+	width: 28px;
+	transition: border-bottom 1s ease-in-out;
+	-webkit-transition: border-bottom 1s ease-in-out;
+}
+
+.burger::before {
+  content: "";
+  display: block;
+  border-bottom: 4px solid black;
+  width: 100%;
+  margin-bottom: 5px;
+  transition: transform 0.5s ease-in-out;
+  -webkit-transition: -webkit-transform 0.5s ease-in-out;
+}
+
+.burger::after {
+  content: "";
+  display: block;
+  border-bottom: 4px solid black;
+  width: 100%;
+  margin-bottom: 5px;
+  transition: transform 0.5s ease-in-out;
+  -webkit-transition: -webkit-transform 0.5s ease-in-out;
+}
+
+.burger-check {
+  display: none;
+}
+
+input[type="checkbox"]:checked ~ .burger {
+  border-bottom: 4px solid transparent;
+  transition: border-bottom 0.8s ease-in-out;
+  -webkit-transition: border-bottom 0.8s ease-in-out;
+
+}
+input[type="checkbox"]:checked ~ .burger::before {
+  transform: rotate(-405deg) translateY(1px) translateX(-3px);
+  -webkit-transform: rotate(-405deg) translateY(1px) translateX(-3px);
+  transition: transform 0.5s ease-in-out;
+  -webkit-transition: -webkit-transform 0.5s ease-in-out;
+}
+
+input[type="checkbox"]:checked ~ .burger::after {
+  transform: rotate(405deg) translateY(-4px) translateX(-5px);
+  -webkit-transform: rotate(405deg) translateY(-4px) translateX(-5px);
+  transition: transform 0.5s ease-in-out;
+  -webkit-transition: -webkit-transform 0.5s ease-in-out;
+}
+
+.navigation {
+  overflow: hidden;
+  max-height: 0;
+  position: absolute;
+
+  transition: max-height 0.5s ease-in-out;
+}
+
+input[type="checkbox"]:checked ~ .navigation {
+  max-height: 500px;
+
+  transition: max-height 0.5s ease-in-out;
+}
+
+
+a {
+  color: inherit;
+}
+
+/*small {
+  font-size: 14px;
+}*/
+
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+li {
+  list-style: none;
+  font-size: 25px;
+  padding: 5px 0;
+
+}
+li a {
+  text-decoration: none;
+}
+
+li a:hover{
+  text-decoration: underline;
+  color: white;
+}
+h1{
+  color: white;
+  font-family: monospace;
+  font-size: 70px;
+}
+body{
+ background-color: #150F54;
+}
+p {
+    border: 1px solid black;
+    background-color: #F2DDB5;
+    position: fixed;
+    width: 200px;
+    top: 185px;
+    right:850;
+    height: 300px;
+    padding-top: 30px;
+    padding-right: 20px;
+    padding-bottom: 30px;
+    padding-left: 20px;
+
+}
+p2 {
+    border: 1px solid black;
+    background-color: #F2DDB5;
+    position: fixed;
+    width: 200px;
+    top: 200px;
+    right:550;
+    height: 300px;
+    padding-top: 30px;
+    padding-right: 20px;
+    padding-bottom: 30px;
+    padding-left: 20px;
+
+}
+p3 {
+    border: 1px solid black;
+    background-color: #F2DDB5;
+    position: fixed;
+    width: 200px;
+    top: 200px;
+    right:250;
+    height: 300px;
+    padding-top: 30px;
+    padding-right: 20px;
+    padding-bottom: 30px;
+    padding-left: 20px;
+
+}
+img {
+  padding-top: 320px;
+  padding-right: 350px;
+
+}

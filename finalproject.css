@@ -1,0 +1,29 @@
+body {
+    background-color: powderblue;
+    background-image: url("http://greenissimo.digital-dictators.de/files/2011/07/cc-Flickruser-DArcy-Norman.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    background-size: 1500px 1000px;
+}  
+
+
+
+button {
+    background-color: white;
+    border: none;
+    color: black;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 70px;
+    font-family: monospace;
+    margin: 100px 5px;
+    cursor: pointer;
+
+  }
+button:hover {
+    background-color: blue;
+
+
+  }
